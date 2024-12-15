@@ -1,4 +1,4 @@
-.toggle-cont {
+.toggle-cont{
     --primary: #54a8fc;
     --light: #d9d9d9;
     --dark: #121212;
@@ -9,17 +9,17 @@
     height: 50px;
     border-radius: 9999px;
   }
-  .toggle-cont .toggle-input {
+  .toggle-cont .toggle-input{
     display: none;
   }
-  .toggle-cont .toggle-label {
+  .toggle-cont .toggle-label{
     --gap: 5px;
     --width: 50px;
     cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 0.5rem;
-    width: calc((var(--width) + var(--gap)) * 2);
+    width: calc((var(--width) + var(--gap)) 2);
     height: 100%;
     background-color: var(--dark);
     border: 1px solid #777777;
@@ -28,7 +28,7 @@
     box-sizing: content-box;
     transition: all 0.3s ease-in-out;
   }
-  .toggle-label::before {
+  .toggle-label::before{
     content: "";
     position: absolute;
     z-index: -10;
