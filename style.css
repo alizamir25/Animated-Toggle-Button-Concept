@@ -43,7 +43,7 @@
     border-radius: 9999px;
     transition: all 0.3s ease-in-out;
   }
-  .toggle-label::after {
+  .toggle-label::after{
     content: "";
     position: absolute;
     z-index: -10;
@@ -59,7 +59,7 @@
     );
     border-radius: 9999px;
   }
-  .toggle-cont .toggle-label .cont-icon {
+  .toggle-cont .toggle-label .cont-icon{
     position: relative;
     display: flex;
     justify-content: center;
@@ -79,11 +79,11 @@
       inset 0 0 0.5rem 0.75rem var(--second);
     transition: transform 0.3s ease-in-out;
   }
-  .cont-icon {
+  .cont-icon{
     overflow: clip;
     position: relative;
   }
-  .cont-icon .sparkle {
+  .cont-icon .sparkle{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,12 +95,12 @@
     transform-origin: 50% 50%;
     rotate: calc(1deg * var(--deg));
     transform: translate(-50%, -50%);
-    animation: sparkle calc(100s / var(--duration)) linear
-      calc(0s / var(--duration)) infinite;
+    animation: sparkle calc(100s/var(--duration)) linear
+      calc(0s/var(--duration)) infinite;
   }
-  @keyframes sparkle {
+  @keyframes sparkle{
     to {
-      width: calc(var(--width) * 0.5px);
+      width: calc(var(--width)*0.5px);
       transform: translate(2000%, -50%);
     }
   }
