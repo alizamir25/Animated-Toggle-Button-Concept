@@ -99,28 +99,28 @@
       calc(0s/var(--duration)) infinite;
   }
   @keyframes sparkle{
-    to {
+    to{
       width: calc(var(--width)*0.5px);
       transform: translate(2000%, -50%);
     }
   }
-  .cont-icon .icon {
+  .cont-icon .icon{
     width: 1.1rem;
     fill: var(--light);
   }
-  .toggle-cont:has(.toggle-input:checked) {
+  .toggle-cont:has(.toggle-input:checked){
     --checked: true;
   }
-  @container style(--checked: true) {
-    .toggle-cont .toggle-label {
+  @container style(--checked: true){
+    .toggle-cont .toggle-label{
       background-color: #41434400;
       border: 1px solid #3d6970;
       border-bottom: 0;
     }
-    .toggle-cont .toggle-label::before {
+    .toggle-cont .toggle-label::before{
       box-shadow: 0 1rem 2.5rem -2rem #0080ff;
     }
-    .toggle-cont .toggle-label .cont-icon {
+    .toggle-cont .toggle-label .cont-icon{
       overflow: visible;
       background-image: radial-gradient(
         circle at 50% 0%,
@@ -129,18 +129,18 @@
       );
       border: 1px solid var(--primary);
       border-bottom: 0;
-      transform: translateX(calc((var(--gap) * 2) + 100%)) rotate(-225deg);
+      transform: translateX(calc((var(--gap)*2) + 100%)) rotate(-225deg);
     }
-    .toggle-cont .toggle-label .cont-icon .sparkle {
+    .toggle-cont .toggle-label .cont-icon .sparkle{
       z-index: -10;
-      width: calc(var(--width) * 1.5px);
+      width: calc(var(--width)*1.5px);
       background-color: #acacac;
-      animation: sparkle calc(100s / var(--duration)) linear
-        calc(10s / var(--duration)) infinite;
+      animation: sparkle calc(100s/var(--duration)) linear
+        calc(10s/var(--duration)) infinite;
     }
-    @keyframes sparkle {
-      to {
-        width: calc(var(--width) * 1px);
+    @keyframes sparkle{
+      to{
+        width: calc(var(--width)*1px);
         transform: translate(5000%, -50%);
       }
     }
